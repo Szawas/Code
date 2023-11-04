@@ -1,0 +1,51 @@
+import java.util.Scanner; // packages untuk scanner
+class menentukanzodiak // memberikan class
+{
+    public static void main(String[] args) {
+        int tanggal, bulan; // identifier tanggal dan bulan
+        Scanner get = new Scanner (System.in); //scanner untuk memasukan data dari keyboard
+        System.out.println("Program Menentukan Zodiak");
+        System.out.print("Masukan tanggal lahir anda (1-31) : "); //menampilkan tulisan
+        tanggal = get.nextInt(); //mengambil data dari scanner
+        System.out.print("Masukan bulan kelahiran anda (1-12) : "); //menampilkan tulisan
+        bulan = get.nextInt(); //mengambil data dari scanner
+        if ((tanggal >= 21 && bulan == 3) ||
+                (tanggal <= 19 && bulan == 4))
+            System.out.println("Zodiak anda adalah Aries");
+        else if ((tanggal >= 20 && bulan == 4) ||
+                (tanggal <= 20 && bulan == 5))
+            System.out.println("Zodiak anda adalah Taurus");
+        else if ((tanggal >= 21 && bulan == 5) ||
+                (tanggal <= 20 && bulan == 6))
+            System.out.println("Zodiak anda adalah Gemini");
+        else if ((tanggal >= 21 && bulan == 6) ||
+                (tanggal <= 22 && bulan == 7))
+            System.out.println("Zodiak anda adalah Cancer");
+        else if ((tanggal >= 23 && bulan == 7) ||
+                (tanggal <= 22 && bulan == 8))
+            System.out.println("Zodiak anda adalah Leo");
+        else if ((tanggal >= 23 && bulan == 8) ||
+                (tanggal <= 22 && bulan == 9))
+            System.out.println("Zodiak anda adalah Virgo");
+        else if ((tanggal >= 23 && bulan == 9) ||
+                (tanggal <= 22 && bulan == 10))
+            System.out.println("Zodiak anda adalah Libra");
+        else if ((tanggal >= 23 && bulan == 10) ||
+                (tanggal <= 21 && bulan == 11))
+            System.out.println("Zodiak anda adalah Scorpio");
+        else if ((tanggal >= 22 && bulan == 11) ||
+                (tanggal <= 21 && bulan == 12))
+            System.out.println("Zodiak anda adalah Sagitarius");
+        else if ((tanggal >= 22 && bulan == 12) ||
+                (tanggal <= 19 && bulan == 1))
+            System.out.println("Zodiak anda adalah Capricon");
+        else if ((tanggal >= 20 && bulan == 1) ||
+                (tanggal <= 18 && bulan == 2))
+            System.out.println("Zodiak anda adalah Aquarius");
+        else if ((tanggal >= 19 && bulan == 2) ||
+                (tanggal <= 20 && bulan == 3))
+            System.out.println("Zodiak anda adalah Pisces");
+        else
+            System.out.println("Data yang anda masukkan tidak valid");
+    }
+}
