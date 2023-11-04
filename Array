@@ -1,0 +1,11 @@
+public class ArrayExample {
+    public static void main(String[] args) {
+        // Deklarasi dan inisialisasi array
+        double[] insight = {2, 5, 7, 8, 10, 14, 17, 22};
+
+        // Perulangan for untuk menampilkan semua nilai dalam array
+        for (int i=0; i<8; i++) {
+            System.out.println("variabel insight ke-" + i + " adalah: " + insight[i]);
+        }
+    }
+}
