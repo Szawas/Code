@@ -1,0 +1,20 @@
+public class NumberClassifier { 
+    public static void main(String[] args) {
+        int count = 1; // Mulai menghitung dari 1
+        int evenCount = 0; // Penghitung angka genap
+        int oddCount = 0; // Penghitung angka ganjil
+
+        while (count <= 100) {
+            if (count % 2 == 0) {
+                // Jika count adalah angka genap 
+                evenCount++;
+            } else {
+                // Jika count adalah angka ganjil
+                oddCount++;
+            }
+            count++;
+        }
+        System.out.println("Jumlah angka genap: " + evenCount);
+        System.out.println("Jumlah angka ganjil: " + oddCount);
+           }
+        }
